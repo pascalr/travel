@@ -1,3 +1,22 @@
 body {
-  background-color: #d8c394;
+  background-color: #e3c784;
+  color: #603616;
+}
+
+.picture {
+  border: 15px solid transparent;
+  border-image: url("/pb.png") 52 round;
+}
+
+.trunk {
+  min-width: 230px;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 0.5em;
+}
+
+.section {
+  padding: 3em 0;
+  display: flex;
+  align-items: center;
 }
