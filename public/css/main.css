@@ -1,16 +1,19 @@
 body {
-  background-color: #e3c784;
+  background-color: #fbdfaa;
+  /*background-color: #754e05;*/
   color: #603616;
 }
 
 .picture {
   border: 15px solid transparent;
-  border-image: url("/pb.png") 52 round;
+  border-image: url("/pb-brown.png") 52 round;
+  width: 100%;
+  max-width: 600px;
 }
 
 .trunk {
   min-width: 230px;
-  max-width: 800px;
+  max-width: 1000px;
   margin: 0 auto;
   padding: 0 0.5em;
 }

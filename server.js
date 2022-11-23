@@ -14,11 +14,33 @@ const debug = debugModule('todos:server');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-let thailandImages = fs.readdirSync(path.join(__dirname, 'public', 'thailand'));
+// Thailande: brun sable
+// Cambodge: Gris brunâtre temple
+// Vietnam: bleu clair, turquoise
+// Chine: Vert et rouge?
+// Japon: vert forêt, bleuté
+// Nouvelle Zélande: Vert pâle prairie, jaunâtre même un peu
+// Italie: Rouge brun tuile
+// France: Gris pierre architecture
+// Belgique: Vert forêt
+// Pays-Bas: Bleu foncé
+// Turquie: Bleu blanchâtre
+// Bulgarie: Noir
+// Polynésie française: Bleu ou vert
+let places = ['thailand']
 
-let trips = {
-  thailand: {images: thailandImages}
+let names = {
+  thailand: 'Thaïlande'
 }
+
+let trips = {}
+places.forEach(place => {
+  trips[place] = {
+    name: names[place],
+    image: place+'.jpg',
+    images: fs.readdirSync(path.join(__dirname, 'public', place)),
+  }
+})
 
 var app = express();
 
@@ -39,9 +61,9 @@ app.get('/', function(req, res, next) {
   res.render('index')
 })
 
-app.get('/thailand', function(req, res, next) {
-  res.locals.trip = trips.thailand
-  res.render('thailand')
+app.get('/t/:name', function(req, res, next) {
+  res.locals.trip = trips[req.params.name]
+  res.render('trip')
 })
 
 // catch 404 and forward to error handler
