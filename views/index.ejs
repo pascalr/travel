@@ -9,11 +9,15 @@
       <div style='background-color: <%- trip.backgroundColor %>; color: <%- trip.color %>'>
         <div class='trunk'>
           <div class='section'>
-            <img src='/<%- trip.image %>' class='picture' style='order: <%- i%2!==0 ? 1 : 3 %>'></img>
+            <div style='order: <%- i%2!==0 ? 1 : 3 %>'>
+              <a href='/t/<%- trip.place %>'>
+                <img src='/<%- trip.image %>' class='picture'></img>
+              </a>
+            </div>
             <div style='width: 2em; height: 1em; order: 2;'></div>
             <div style='order: <%- i%2===0 ? 1 : 3 %>'>
               <div style='width: 20em; border-bottom: 3px solid #603616; height: 2em;'>
-                <h2><%- trip.name %></h2>
+                <h2><a href='/t/<%- trip.place %>' style='color: <%- trip.color %>; text-decoration: none;'><%- trip.name %></a></h2>
               </div>
               <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
               <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
