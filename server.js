@@ -54,23 +54,23 @@ let tripDetails = {
   cambodia: {
     name: 'Cambodge',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#603616',
-    borderColor: 'brown',
-    backgroundColor: '#fbdfaa',
+    color: '#202225',
+    borderColor: 'dark',
+    backgroundColor: '#60574e',
   },
   vietnam: {
     name: 'Viêt Nam',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
     color: '#603616',
-    borderColor: 'brown',
-    backgroundColor: '#fbdfaa',
+    borderColor: 'purple',
+    backgroundColor: '#aaecfb',
   },
   china: {
     name: 'Chine',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: 'black',
-    borderColor: 'brown',
-    backgroundColor: 'green',
+    color: '#7f0000',
+    borderColor: 'red',
+    backgroundColor: '#02220f',
   },
 }
 

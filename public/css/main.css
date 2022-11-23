@@ -1,6 +1,5 @@
 .picture {
   border: 15px solid transparent;
-  border-image: url("/pb-brown.png") 52 round;
   width: 100%;
   max-width: 600px;
 }
@@ -13,7 +12,7 @@
 }
 
 .section {
-  padding: 3em 1em;
+  padding: 6em 1em;
   display: block;
   align-items: center;
 }
@@ -43,6 +42,6 @@
 @media screen and (min-width: 768px) {
   .section {
     display: flex !important;
-    padding: 3em 0;
+    padding: 6em 0;
   }
 }

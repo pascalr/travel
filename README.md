@@ -2,7 +2,11 @@
 
 ## TODO
 
-Les images principales les garder dans un format plus grand. Éviter qu'elles soient strech.
+- Ajouter des notes par images.
+- Pretty font for home page & titles
+- Pretty handwriting font for notes
+- Faire des borders personalisés pour chaque pays. Par exemple pour la Chine, une border surtout rouge, mais un peu dorée. Pour le cambodge style Angkor Wat.
+- Les images principales les garder dans un format plus grand. Éviter qu'elles soient strech.
 
 ## Credit
 
