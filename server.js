@@ -14,10 +14,11 @@ const debug = debugModule('todos:server');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Sur la page d'acceuil afficher chacun des pays avec leur couleur?
 // Thailande: brun sable
 // Cambodge: Gris brunâtre temple
 // Vietnam: bleu clair, turquoise
-// Chine: Vert et rouge?
+// Chine: Vert et rouge? (Background vert fôret avec cadres rouges)
 // Japon: vert forêt, bleuté
 // Nouvelle Zélande: Vert pâle prairie, jaunâtre même un peu
 // Italie: Rouge brun tuile
@@ -29,14 +30,20 @@ const __dirname = path.dirname(__filename);
 // Polynésie française: Bleu ou vert
 let places = ['thailand']
 
-let names = {
-  thailand: 'Thaïlande'
+let tripDetails = {
+  thailand: {
+    name: 'Thaïlande',
+    description: 'Ma première destination a été la Thaïlande.',
+    color: '#603616',
+    backgroundColor: '#fbdfaa',
+  },
 }
 
 let trips = {}
 places.forEach(place => {
   trips[place] = {
-    name: names[place],
+    place: place,
+    ...tripDetails[place],
     image: place+'.jpg',
     images: fs.readdirSync(path.join(__dirname, 'public', place)),
   }
@@ -58,6 +65,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res, next) {
+  res.locals.trips = Object.values(trips)
   res.render('index')
 })
 

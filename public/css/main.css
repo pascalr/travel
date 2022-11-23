@@ -1,9 +1,3 @@
-body {
-  background-color: #fbdfaa;
-  /*background-color: #754e05;*/
-  color: #603616;
-}
-
 .picture {
   border: 15px solid transparent;
   border-image: url("/pb-brown.png") 52 round;
