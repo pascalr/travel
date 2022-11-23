@@ -14,6 +14,12 @@ const debug = debugModule('todos:server');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+let thailandImages = fs.readdirSync(path.join(__dirname, 'public', 'thailand'));
+
+let trips = {
+  thailand: {images: thailandImages}
+}
+
 var app = express();
 
 //enableLiveReload(app)
@@ -34,6 +40,7 @@ app.get('/', function(req, res, next) {
 })
 
 app.get('/thailand', function(req, res, next) {
+  res.locals.trip = trips.thailand
   res.render('thailand')
 })
 

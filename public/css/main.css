@@ -16,8 +16,8 @@ body {
 }
 
 .section {
-  padding: 3em 0;
-  display: flex;
+  padding: 3em 1em;
+  display: block;
   align-items: center;
 }
 
@@ -40,4 +40,12 @@ body {
   color: white;
   padding: 0 1em;
   border-radius: 2em;
+}
+
+/* xs: 0, sm: 576, md: 768, lg: 992, xl: 1200, xxl: 1400 */
+@media screen and (min-width: 768px) {
+  .section {
+    display: flex !important;
+    padding: 3em 0;
+  }
 }
