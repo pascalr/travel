@@ -14,15 +14,11 @@
                 <img src='/<%- trip.image %>' class='picture'></img>
               </a>
             </div>
-            <div style='width: 2em; height: 1em; order: 2;'></div>
+            <div style='width: 3em; height: 1em; order: 2;'></div>
             <div style='order: <%- i%2===0 ? 1 : 3 %>'>
-              <div style='width: 20em; border-bottom: 3px solid #603616; height: 2em;'>
-                <h2><a href='/t/<%- trip.place %>' style='color: <%- trip.color %>; text-decoration: none;'><%- trip.name %></a></h2>
-              </div>
-              <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
-              <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
-              <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
-              <div style='width: 25em; border-bottom: 1px solid #603616; height: 2em;'></div>
+              <h2><a href='/t/<%- trip.place %>' style='color: <%- trip.color %>; text-decoration: none;'><%- trip.name %></a></h2>
+              <p style='line-height: 1.5em;'>Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis partit avec seulement un billet d'aller et mon sac à dos.</p>
+              <p><a href='/t/<%- trip.place %>' style='color: <%- trip.color %>;'>En savoir plus...</a></p>
             </div>
           </div>
         </div>

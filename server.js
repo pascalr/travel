@@ -14,6 +14,20 @@ const debug = debugModule('todos:server');
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+// Parler des agriculteurs cambodgiens qui ont l'air tellement pauvre, mais heureux.
+// Ils un super beau sourire challeureux avec les 2-3 dents qui leur reste.
+//
+// Faire une page à propos de tous les gens que j'ai rencontré.
+//
+// Raconter que Wood passait la ses aniversaires seuls au temple à réfléchir sur sa dernière année.
+// Raconter son histoire.
+//
+// Écrire 
+
+let descritions = {
+  vachesCambdoges: 'Pour faire plaisir à mes parents qui sont agriculteurs. Des belles vaches.'
+}
+
 // Sur la page d'acceuil afficher chacun des pays avec leur couleur?
 // Thailande: brun sable
 // Cambodge: Gris brunâtre temple
