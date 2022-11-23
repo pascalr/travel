@@ -20,3 +20,24 @@ body {
   display: flex;
   align-items: center;
 }
+
+.image-header-ctn {
+  max-height: calc(100vh - 3em);
+  overflow: hidden;
+  position: relative;
+  height: fit-content;
+}
+
+.image-header-title {
+  width: fit-content;
+  max-width: 30em;
+  position: absolute;
+  top: 50%;
+  transform: translate(-50%, -1.4em);
+  left: 50%;
+  height: fit-content;
+  background-color: rgba(0,0,0,0.5);
+  color: white;
+  padding: 0 1em;
+  border-radius: 2em;
+}
