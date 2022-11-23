@@ -1,5 +1,9 @@
 # Travel
 
+## TODO
+
+Les images principales les garder dans un format plus grand. Éviter qu'elles soient strech.
+
 ## Credit
 
 My mother: She bought me camera, otherwise I would have 0 pictures of my trip...

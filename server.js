@@ -42,19 +42,40 @@ let descritions = {
 // Turquie: Bleu blanchâtre
 // Bulgarie: Noir
 // Polynésie française: Bleu ou vert
-let places = ['thailand']
 
 let tripDetails = {
   thailand: {
     name: 'Thaïlande',
     description: 'Ma première destination a été la Thaïlande.',
     color: '#603616',
+    borderColor: 'brown',
     backgroundColor: '#fbdfaa',
+  },
+  cambodia: {
+    name: 'Cambodge',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#603616',
+    borderColor: 'brown',
+    backgroundColor: '#fbdfaa',
+  },
+  vietnam: {
+    name: 'Viêt Nam',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#603616',
+    borderColor: 'brown',
+    backgroundColor: '#fbdfaa',
+  },
+  china: {
+    name: 'Chine',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: 'black',
+    borderColor: 'brown',
+    backgroundColor: 'green',
   },
 }
 
 let trips = {}
-places.forEach(place => {
+Object.keys(tripDetails).forEach(place => {
   trips[place] = {
     place: place,
     ...tripDetails[place],
