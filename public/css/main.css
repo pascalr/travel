@@ -36,6 +36,11 @@
 #index .section {
   padding: 9em 1em;
 }
+.section > .nth-child(2) {
+  width: 3em;
+  height: 1em;
+  order: 2;
+}
 
 .image-header-ctn {
   max-height: calc(100vh - 3em);
