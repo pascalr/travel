@@ -33,9 +33,6 @@
   display: block;
   align-items: center;
 }
-#index .section {
-  padding: 9em 1em;
-}
 .section > *:nth-child(2) {
   width: 3em;
   height: 1em;

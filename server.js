@@ -51,10 +51,6 @@ let descritions = {
 }
 
 // Sur la page d'acceuil afficher chacun des pays avec leur couleur?
-// Thailande: brun sable
-// Cambodge: Gris brunâtre temple
-// Vietnam: bleu clair, turquoise
-// Chine: Vert et rouge? (Background vert fôret avec cadres rouges)
 // Japon: vert forêt, bleuté
 // Nouvelle Zélande: Vert pâle prairie, jaunâtre même un peu
 // Italie: Rouge brun tuile
@@ -64,6 +60,7 @@ let descritions = {
 // Turquie: Bleu blanchâtre
 // Bulgarie: Noir
 // Polynésie française: Bleu ou vert
+// Étais Unis: bleu margin et blanc. Ou blanc et Noir
 
 let tripDetails = {
   thailand: {
@@ -99,6 +96,34 @@ let tripDetails = {
     borderImage: 'url("/pb-china7.png") 66 round',
     borderSize: 20, // TODO: Use that
     backgroundColor: '#02220f',
+  },
+  italy: {
+    name: 'Italy',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#000',
+    borderImage: 'url("/pb-cambodia2.png") 52 round',
+    backgroundColor: '#916b62',
+  },
+  france: {
+    name: 'France',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#000',
+    borderImage: 'url("/pb-cambodia2.png") 52 round',
+    backgroundColor: '#9e9eac',
+  },
+  belgium: {
+    name: 'Belgique',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#fff',
+    borderImage: 'url("/pb-gray2.png") 52 round',
+    backgroundColor: '#385332',
+  },
+  netherlands: {
+    name: 'Pays-Bas',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    color: '#fff',
+    borderImage: 'url("/pb-light.png") 52 round',
+    backgroundColor: '#0c2d6c',
   },
 }
 

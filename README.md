@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Au lieu de faire comme je fais, utiliser un css pour chaque trip. public/css/france.css, ...
 - Demander la permission aux gens à qui ont voit le visage.
 - Ajouter des notes par images.
 - Pretty font for home page & titles
