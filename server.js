@@ -45,6 +45,8 @@ const __dirname = path.dirname(__filename);
 // Très pratique les petites autos à Rome. Le stationnement est très très très difficile.
 //
 // Le bain en italie. Une petite pensée pour ma blonde qui doit laver le bain avant de le prendre.
+//
+// Un jeune homme de 18 ans sait reconnaître l'art lorsqu'il en voit. Il sait apprécié les courbes et les formes des oeuvres.
 
 let descritions = {
   vachesCambdoges: 'Pour faire plaisir à mes parents qui sont agriculteurs. Des belles vaches.'
@@ -68,7 +70,7 @@ let tripDetails = {
     description: "Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis parti avec un billet d'aller et mon sac à dos seulement.",
 
     descriptions: {
-      activite_01: "Dans une auberge de jeunesse, j'ai recontré un très gentil Thaïlandais qui s'appelle Wood. On a passé une semaine ensemble à voyager. On a traversé la Thaïlande de Bangkok jusqu'à Chiang Rai. C'est lui avec moi sur l'éléphant. Il en avait déjà fait, mais il m'a accompagné parce que c'était moi cher ainsi. Le prix pour les locaux est moins cher que le prix pour les touristes.",
+      activite_01: "Dans une auberge de jeunesse, j'ai recontré un très gentil Thaïlandais qui s'appelle Wood. On a passé une semaine ensemble à voyager. On a traversé la Thaïlande de Bangkok jusqu'à Chiang Rai. C'est lui avec moi sur l'éléphant. Il en avait déjà fait, mais il m'a accompagné parce que c'était moins cher ainsi. Le prix pour les locaux est moins cher que le prix pour les touristes.",
     },
   },
   cambodia: {
@@ -81,6 +83,10 @@ let tripDetails = {
   },
   china: {
     name: 'Chine',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+  },
+  newzealand: {
+    name: 'Nouvelle-Zélande',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
   },
   italy: {

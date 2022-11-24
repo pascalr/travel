@@ -89,7 +89,7 @@
 .vietnam .color, .vietnam .color a { color: #603616 !important; }
 .vietnam .picture { border-image: url("/pb-purple.png") 52 round; }
 
-.china .bg-color { background-color: #02220f; }
+.china .bg-color { background-color: #0e241d; }
 .china .color, .china .color a { color: #df0000 !important; }
 .china .picture {
   border: 25px solid transparent;
@@ -112,4 +112,6 @@
 .netherlands .color, .netherlands .color a { color: #fff !important; }
 .netherlands .picture { border-image: url("/pb-light.png") 52 round; }
 
-
+.newzealand .bg-color { background-color: #b1daff; }
+.newzealand .color, .newzealand .color a { color: #4b3530 !important; }
+.newzealand .picture { border-image: url("/pb-white.png") 52 round; }
