@@ -47,6 +47,8 @@ const __dirname = path.dirname(__filename);
 // Le bain en italie. Une petite pensée pour ma blonde qui doit laver le bain avant de le prendre.
 //
 // Un jeune homme de 18 ans sait reconnaître l'art lorsqu'il en voit. Il sait apprécié les courbes et les formes des oeuvres.
+//
+// Sur le volcan au japon je me sentais comme dans Zelda
 
 let descritions = {
   vachesCambdoges: 'Pour faire plaisir à mes parents qui sont agriculteurs. Des belles vaches.'
