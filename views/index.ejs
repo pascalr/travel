@@ -6,19 +6,21 @@
   <body id='index'>
     <%- include('partials/navbar') %>
     <% trips.forEach((trip, i) => { %>
-      <div style='background-color: <%- trip.backgroundColor %>; color: <%- trip.color %>'>
-        <div class='trunk'>
-          <div class='section'>
-            <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 2 width: 600px;'>
-              <a href='/t/<%- trip.place %>'>
-                <img src='/<%- trip.image %>' class='picture' style='border-image: <%- trip.borderImage %>'></img>
-              </a>
-            </div>
-            <div></div>
-            <div class='desc handwriting' style='order: <%- i%2===0 ? 1 : 3 %>; flex-shrink: 1'>
-              <h2><%- trip.name %></h2>
-              <p style='line-height: 1.5em;'><%- trip.description %></p>
-              <p><a href='/t/<%- trip.place %>' style='color: <%- trip.color %>;'>En savoir plus...</a></p>
+      <div class='<%- trip.place %>'>
+        <div class='bg-color color'>
+          <div class='trunk'>
+            <div class='section'>
+              <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 2 width: 600px;'>
+                <a href='/t/<%- trip.place %>'>
+                  <img src='/<%- trip.image %>' class='picture'></img>
+                </a>
+              </div>
+              <div></div>
+              <div class='desc handwriting' style='order: <%- i%2===0 ? 1 : 3 %>; flex-shrink: 1'>
+                <h2><%- trip.name %></h2>
+                <p style='line-height: 1.5em;'><%- trip.description %></p>
+                <p><a href='/t/<%- trip.place %>'>En savoir plus...</a></p>
+              </div>
             </div>
           </div>
         </div>

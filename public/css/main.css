@@ -76,3 +76,40 @@
 @media screen and (max-width: 360px) {
   body { font-size: 0.8em; }
 }
+
+.thailand .bg-color { background-color: #fbdfaa; }
+.thailand .color, .thailand .color a { color: #603616 !important; }
+.thailand .picture { border-image: url("/pb-brown.png") 52 round; }
+
+.cambodia .bg-color { background-color: #736b63; }
+.cambodia .color, .cambodia .color a { color: #000 !important; }
+.cambodia .picture { border-image: url("/pb-cambodia2.png") 52 round; }
+
+.vietnam .bg-color { background-color: #aaecfb; }
+.vietnam .color, .vietnam .color a { color: #603616 !important; }
+.vietnam .picture { border-image: url("/pb-purple.png") 52 round; }
+
+.china .bg-color { background-color: #02220f; }
+.china .color, .china .color a { color: #df0000 !important; }
+.china .picture {
+  border: 20px solid transparent;
+  border-image: url("/pb-china7.png") 66 round;
+}
+
+.italy .bg-color { background-color: #916b62; }
+.italy .color, .italy .color a { color: #000 !important; }
+.italy .picture { border-image: url("/pb-cambodia2.png") 52 round; }
+
+.france .bg-color { background-color: #9e9eac; }
+.france .color, .france .color a { color: #000 !important; }
+.france .picture { border-image: url("/pb-cambodia2.png") 52 round; }
+
+.belgium .bg-color { background-color: #385332; }
+.belgium .color, .belgium .color a { color: #fff !important; }
+.belgium .picture { border-image: url("/pb-gray2.png") 52 round; }
+
+.netherlands .bg-color { background-color: #0c2d6c; }
+.netherlands .color, .netherlands .color a { color: #fff !important; }
+.netherlands .picture { border-image: url("/pb-light.png") 52 round; }
+
+

@@ -67,9 +67,6 @@ let tripDetails = {
     name: 'Thaïlande',
     description: "Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis parti avec un billet d'aller et mon sac à dos seulement.",
 
-    color: '#603616',
-    borderImage: 'url("/pb-brown.png") 52 round',
-    backgroundColor: '#fbdfaa',
     descriptions: {
       activite_01: "Dans une auberge de jeunesse, j'ai recontré un très gentil Thaïlandais qui s'appelle Wood. On a passé une semaine ensemble à voyager. On a traversé la Thaïlande de Bangkok jusqu'à Chiang Rai. C'est lui avec moi sur l'éléphant. Il en avait déjà fait, mais il m'a accompagné parce que c'était moi cher ainsi. Le prix pour les locaux est moins cher que le prix pour les touristes.",
     },
@@ -77,53 +74,30 @@ let tripDetails = {
   cambodia: {
     name: 'Cambodge',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#000',
-    borderImage: 'url("/pb-cambodia2.png") 52 round',
-    backgroundColor: '#736b63',
-    //backgroundColor: '#60574e',
   },
   vietnam: {
     name: 'Viêt Nam',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#603616',
-    borderImage: 'url("/pb-purple.png") 52 round',
-    backgroundColor: '#aaecfb',
   },
   china: {
     name: 'Chine',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#df0000',
-    borderImage: 'url("/pb-china7.png") 66 round',
-    borderSize: 20, // TODO: Use that
-    backgroundColor: '#02220f',
   },
   italy: {
     name: 'Italy',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#000',
-    borderImage: 'url("/pb-cambodia2.png") 52 round',
-    backgroundColor: '#916b62',
   },
   france: {
     name: 'France',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#000',
-    borderImage: 'url("/pb-cambodia2.png") 52 round',
-    backgroundColor: '#9e9eac',
   },
   belgium: {
     name: 'Belgique',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#fff',
-    borderImage: 'url("/pb-gray2.png") 52 round',
-    backgroundColor: '#385332',
   },
   netherlands: {
     name: 'Pays-Bas',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#fff',
-    borderImage: 'url("/pb-light.png") 52 round',
-    backgroundColor: '#0c2d6c',
   },
 }
 
