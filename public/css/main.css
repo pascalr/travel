@@ -1,3 +1,21 @@
+@font-face {
+  font-family: handwriting;
+  src: url('/fonts/LaBelleAurore-Regular.ttf');
+  /*src: url('/fonts/SquarePeg-Regular.ttf');*/
+}
+
+.handwriting {
+  font-family: handwriting;
+  font-size: 2em;
+}
+
+.desc {
+  width: 100%;
+  line-height: 2.8em;
+  text-align: justify;
+  flex-shrink: 1;
+}
+
 .picture {
   border: 15px solid transparent;
   width: 100%;
@@ -6,7 +24,7 @@
 
 .trunk {
   min-width: 230px;
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
   padding: 0 0.5em;
 }
@@ -44,4 +62,13 @@
     display: flex !important;
     padding: 6em 0;
   }
+  .desc {
+    width: 25em;
+  }
+}
+@media screen and (max-width: 420px) {
+  body { font-size: 0.9em; }
+}
+@media screen and (max-width: 360px) {
+  body { font-size: 0.8em; }
 }

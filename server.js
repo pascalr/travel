@@ -61,6 +61,9 @@ let tripDetails = {
     color: '#603616',
     borderImage: 'url("/pb-brown.png") 52 round',
     backgroundColor: '#fbdfaa',
+    descriptions: {
+      activite_01: "Dans une auberge de jeunesse, j'ai recontré un très gentil Thaïlandais qui s'appelle Wood. On a passé une semaine ensemble à voyager. On a traversé la Thaïlande de Bangkok jusqu'à Chiang Rai. C'est lui avec moi sur l'éléphant. Il en avait déjà fait, mais il m'a accompagné parce que c'était moi cher ainsi. Le prix pour les locaux est moins cher que le prix pour les touristes.",
+    },
   },
   cambodia: {
     name: 'Cambodge',
