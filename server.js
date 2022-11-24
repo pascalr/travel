@@ -23,6 +23,17 @@ const __dirname = path.dirname(__filename);
 // Raconter son histoire.
 //
 // Écrire 
+//
+// Parler que la Chine était vraiment gris.
+//
+// La chine est pollué. Pendant 1 mois que j'étais là, le temps était pas mal toujours gris.
+// Comme un smog constant.
+//
+// Je ne m'en rendais pas tant compte sure le moment.
+//
+// Mais, quand j'ai quitté la Chine pour le Japon, je n'en revenais à quel point le ciel était bleu et que la végétation était verte!
+//
+// On le voit bien sur les photos. Je n'ai pas vraiment de belles photos de paysages, elles sont toutes grises...
 
 let descritions = {
   vachesCambdoges: 'Pour faire plaisir à mes parents qui sont agriculteurs. Des belles vaches.'
@@ -48,28 +59,29 @@ let tripDetails = {
     name: 'Thaïlande',
     description: 'Ma première destination a été la Thaïlande.',
     color: '#603616',
-    borderColor: 'brown',
+    borderImage: 'url("/pb-brown.png") 52 round',
     backgroundColor: '#fbdfaa',
   },
   cambodia: {
     name: 'Cambodge',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
     color: '#202225',
-    borderColor: 'dark',
+    borderImage: 'url("/pb-dark.png") 52 round',
     backgroundColor: '#60574e',
   },
   vietnam: {
     name: 'Viêt Nam',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
     color: '#603616',
-    borderColor: 'purple',
+    borderImage: 'url("/pb-purple.png") 52 round',
     backgroundColor: '#aaecfb',
   },
   china: {
     name: 'Chine',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#7f0000',
-    borderColor: 'red',
+    color: '#df0000',
+    borderImage: 'url("/pb-china6.png") 66 round',
+    borderSize: 20, // TODO: Use that
     backgroundColor: '#02220f',
   },
 }
