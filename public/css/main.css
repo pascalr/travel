@@ -92,7 +92,7 @@
 .china .bg-color { background-color: #02220f; }
 .china .color, .china .color a { color: #df0000 !important; }
 .china .picture {
-  border: 20px solid transparent;
+  border: 25px solid transparent;
   border-image: url("/pb-china7.png") 66 round;
 }
 
