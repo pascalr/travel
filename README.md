@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Demander la permission aux gens à qui ont voit le visage.
 - Ajouter des notes par images.
 - Pretty font for home page & titles
 - Pretty handwriting font for notes

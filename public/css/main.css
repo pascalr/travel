@@ -36,7 +36,7 @@
 #index .section {
   padding: 9em 1em;
 }
-.section > .nth-child(2) {
+.section > *:nth-child(2) {
   width: 3em;
   height: 1em;
   order: 2;

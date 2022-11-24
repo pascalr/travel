@@ -34,6 +34,17 @@ const __dirname = path.dirname(__filename);
 // Mais, quand j'ai quitté la Chine pour le Japon, je n'en revenais à quel point le ciel était bleu et que la végétation était verte!
 //
 // On le voit bien sur les photos. Je n'ai pas vraiment de belles photos de paysages, elles sont toutes grises...
+//
+// Adolphe Sax, 46 brevets, mais 3 faillites
+// L'emplacement où Jeanne-D'arc a été brulé
+//
+// En italie, je restais en adoration longtemps devait les magnifiques grand bâtiment.
+//
+// Je me sentais comme dans assassins's creed!
+//
+// Très pratique les petites autos à Rome. Le stationnement est très très très difficile.
+//
+// Le bain en italie. Une petite pensée pour ma blonde qui doit laver le bain avant de le prendre.
 
 let descritions = {
   vachesCambdoges: 'Pour faire plaisir à mes parents qui sont agriculteurs. Des belles vaches.'
@@ -85,7 +96,7 @@ let tripDetails = {
     name: 'Chine',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
     color: '#df0000',
-    borderImage: 'url("/pb-china6.png") 66 round',
+    borderImage: 'url("/pb-china7.png") 66 round',
     borderSize: 20, // TODO: Use that
     backgroundColor: '#02220f',
   },
