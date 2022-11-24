@@ -57,7 +57,8 @@ let descritions = {
 let tripDetails = {
   thailand: {
     name: 'Thaïlande',
-    description: 'Ma première destination a été la Thaïlande.',
+    description: "Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis parti avec un billet d'aller et mon sac à dos seulement.",
+
     color: '#603616',
     borderImage: 'url("/pb-brown.png") 52 round',
     backgroundColor: '#fbdfaa',
@@ -68,9 +69,10 @@ let tripDetails = {
   cambodia: {
     name: 'Cambodge',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
-    color: '#202225',
-    borderImage: 'url("/pb-dark.png") 52 round',
-    backgroundColor: '#60574e',
+    color: '#000',
+    borderImage: 'url("/pb-cambodia2.png") 52 round',
+    backgroundColor: '#736b63',
+    //backgroundColor: '#60574e',
   },
   vietnam: {
     name: 'Viêt Nam',
@@ -93,6 +95,7 @@ let trips = {}
 Object.keys(tripDetails).forEach(place => {
   trips[place] = {
     place: place,
+    descriptions: [], // Default is empty, overwritten by tripDetails
     ...tripDetails[place],
     image: place+'.jpg',
     images: fs.readdirSync(path.join(__dirname, 'public', place)),

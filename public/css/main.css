@@ -34,6 +34,9 @@
   display: block;
   align-items: center;
 }
+#index .section {
+  padding: 9em 1em;
+}
 
 .image-header-ctn {
   max-height: calc(100vh - 3em);
