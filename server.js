@@ -66,14 +66,14 @@ let descritions = {
 // Polynésie française: Bleu ou vert
 // Étais Unis: bleu margin et blanc. Ou blanc et Noir
 
+const imageDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'public/descriptions.json'), 'utf8'))
+
+console.log('imageDescriptions', imageDescriptions)
+
 let tripDetails = {
   thailand: {
     name: 'Thaïlande',
     description: "Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis parti avec un billet d'aller et mon sac à dos seulement.",
-
-    descriptions: {
-      activite_01: "Dans une auberge de jeunesse, j'ai recontré un très gentil Thaïlandais qui s'appelle Wood. On a passé une semaine ensemble à voyager. On a traversé la Thaïlande de Bangkok jusqu'à Chiang Rai. C'est lui avec moi sur l'éléphant. Il en avait déjà fait, mais il m'a accompagné parce que c'était moins cher ainsi. Le prix pour les locaux est moins cher que le prix pour les touristes.",
-    },
   },
   cambodia: {
     name: 'Cambodge',
@@ -117,8 +117,11 @@ Object.keys(tripDetails).forEach(place => {
     ...tripDetails[place],
     image: place+'.jpg',
     images: fs.readdirSync(path.join(__dirname, 'public', place)),
+    descriptions: imageDescriptions[place],
   }
 })
+
+console.log('trips', trips)
 
 var app = express();
 
@@ -129,6 +132,7 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.locals.locale = 'fr'
+app.locals.NODE_ENV = process.env.NODE_ENV
 
 app.use(logger('dev'));
 app.use(express.json());
@@ -138,6 +142,15 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.get('/', function(req, res, next) {
   res.locals.trips = Object.values(trips)
   res.render('index')
+})
+
+app.patch('/update', function(req, res, next) {
+  let {place, image, desc} = req.body
+  let a = imageDescriptions[place] || {}
+  a[image] = desc
+  imageDescriptions[place] = a
+  fs.writeFileSync(path.join(__dirname, 'public/descriptions.json'), JSON.stringify(imageDescriptions))
+  res.send('ok')
 })
 
 app.get('/t/:name', function(req, res, next) {
