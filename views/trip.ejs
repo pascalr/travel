@@ -16,7 +16,7 @@
         <% trip.images.forEach((image, i) => { %>
           <% let description = (trip.descriptions || {})[image] %>
           <div class='section'>
-            <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 1; max-width: 804px; margin: auto;'>
+            <div class='frame' style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 1; max-width: 804px; margin: auto;'>
               <img src=<%- '/'+trip.place+'/'+image %> class='picture' title='<%- image %>'></img>
             </div>
             <div></div>

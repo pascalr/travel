@@ -17,6 +17,7 @@
 }
 
 .picture {
+  display: block;
   border: 15px solid transparent;
   width: 100%;
 }
@@ -143,6 +144,9 @@
 .newzealand .bg-color { background-color: #b1daff; }
 .newzealand .color, .newzealand .color a { color: #4b3530 !important; }
 /*.newzealand .picture { border-image: url("/pb-white.png") 52 round; }*/
+.newzealand .frame {
+  border: 1px solid #828080;
+}
 .newzealand .picture {
   border: 20px solid white;
   box-shadow: 10px 10px;

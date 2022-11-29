@@ -12,7 +12,9 @@
             <div class='section'>
               <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 1; max-width: 804px; margin: auto;'>
                 <a href='/t/<%- trip.place %>'>
-                  <img src='/<%- trip.image %>' class='picture'></img>
+                  <div class='frame'>
+                    <img src='/<%- trip.image %>' class='picture'></img>
+                  </div>
                 </a>
               </div>
               <div></div>

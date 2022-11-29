@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Faire des belles lignes séparatrices entre les photos discrètes avec des tigilis
 - Faire un bande header pour la page d'acceuil, où pour toute les page, au lieu d'une mini navbar, un grand header.
 - Make image 804 px wide, without including border...
 - Faire une description de base pour chacun des pays.
