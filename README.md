@@ -23,9 +23,11 @@
 - Don Cloud. border_01.png. https://pixabay.com/illustrations/border-picture-frame-black-picture-318820/
 - Pete Linforth. border_02.jpg. https://pixabay.com/illustrations/picture-frame-antique-vintage-2254525/
 - Gerd Altmann. border_03.jpg. https://pixabay.com/illustrations/frame-picture-frame-outline-shine-89486/
+- MR1313. border_07.jpg. https://pixabay.com/illustrations/frame-photo-frame-sample-photoshop-2486643/
 
 ## Reduce image size
 mogrify -resize 25% -quality 85 *.jpg
 
 Rename all files extension from JPG to jpg:
 for f in *.JPG; do mv "$f" $(echo "$f" | sed 's/JPG/jpg/g'); done
+

@@ -147,9 +147,12 @@ app.get('/', function(req, res, next) {
 app.patch('/update', function(req, res, next) {
   let {place, image, desc} = req.body
   let a = imageDescriptions[place] || {}
-  a[image] = desc
-  imageDescriptions[place] = a
-  fs.writeFileSync(path.join(__dirname, 'public/descriptions.json'), JSON.stringify(imageDescriptions))
+  if (desc || a) {
+    a[image] = desc
+    imageDescriptions[place] = a
+    let d = JSON.stringify(imageDescriptions, undefined, '\t')
+    fs.writeFileSync(path.join(__dirname, 'public/descriptions.json'), d)
+  }
   res.send('ok')
 })
 

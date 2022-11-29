@@ -117,7 +117,7 @@
 .italy .color, .italy .color a { color: #000 !important; }
 .italy .picture {
   border: 25px solid transparent;
-  border-image: url("/border_06.jpg") 74 74 round;
+  border-image: url("/border_06.jpg") 74 74;
 }
 
 .france .bg-color { background-color: #9e9eac; }
