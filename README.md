@@ -2,6 +2,7 @@
 
 ## TODO
 
+- Faire une description de base pour chacun des pays.
 - Pouvoir changer l'ordre des photos.
 - Passer à travers toutes les images et écrire une description quand j'ai de quoi à dire
 - Écrire un article: Les mauvais côté du voyage
