@@ -68,8 +68,6 @@ let descritions = {
 
 const imageDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'public/descriptions.json'), 'utf8'))
 
-console.log('imageDescriptions', imageDescriptions)
-
 let tripDetails = {
   thailand: {
     name: 'Thaïlande',
@@ -85,6 +83,10 @@ let tripDetails = {
   },
   china: {
     name: 'Chine',
+    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+  },
+  japan: {
+    name: 'Japon',
     description: 'Lorem ipsum blah foo bar baz foo bar baz.',
   },
   newzealand: {
@@ -120,8 +122,6 @@ Object.keys(tripDetails).forEach(place => {
     descriptions: imageDescriptions[place],
   }
 })
-
-console.log('trips', trips)
 
 var app = express();
 

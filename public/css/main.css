@@ -9,6 +9,13 @@
   font-size: 2em;
 }
 
+.separator {
+  height: 4em;
+  background-image: linear-gradient(to bottom, #262323, #262323, #3c3939);
+  border-top: 2px solid black;
+  border-bottom: 2px solid black;
+}
+
 .desc {
   width: 100%;
   line-height: 2.8em;
@@ -85,32 +92,98 @@
   body { font-size: 0.8em; }
 }
 
-.thailand .bg-color { background-color: #fbdfaa; }
+.thailand .bg-color {
+  /*background-color: #fbdfaa;*/
+  /*background-image: radial-gradient(#fbdfaa, #867555);*/
+  background-image: linear-gradient(to right, #9b8c6e, #fbdfaa, #9b8c6e);
+}
+.thailand .bg-radial {
+  background-image: radial-gradient(#fbdfaa, #887a5d) !important;
+}
+.thailand h2 {
+  text-shadow: 2px 2px #1e190d;
+}
 .thailand .color, .thailand .color a { color: #603616 !important; }
 .thailand .picture {
   border: 25px solid transparent;
   border-image: url("/border_07.jpg") 40 round;
 }
 
-.cambodia .bg-color { background-color: #736b63; }
+.cambodia .bg-color {
+  /*background-color: #736b63;*/
+  background-image: linear-gradient(to right, #736b63, #a69a8e, #736b63);
+}
+.cambodia h2 {
+  text-shadow: 2px 2px #423b35;
+}
+.cambodia .bg-radial {
+  background-image: radial-gradient(#a69a8e, #736b63) !important;
+}
 .cambodia .color, .cambodia .color a { color: #000 !important; }
 .cambodia .picture {
   border: 25px solid transparent;
   border-image: url("/border_02.jpg") 75 round;
 }
 
-.vietnam .bg-color { background-color: #aaecfb; }
-.vietnam .color, .vietnam .color a { color: #603616 !important; }
+.vietnam .color, .vietnam .color a { color: #111 !important; }
+.vietnam .bg-color {
+  background-image: linear-gradient(to right, #46bad5, #aaecfb, #46bad5);
+}
+.vietnam .bg-radial {
+  background-image: radial-gradient(#aaecfb, #46bad5) !important;
+}
+.vietnam h2 {
+  text-shadow: 2px 2px #333;
+}
 .vietnam .picture {
   border: 25px solid transparent;
   border-image: url("/border_03.jpg") 33 round;
 }
 
-.china .bg-color { background-color: #0e241d; }
+.china {
+  text-shadow: 2px 2px #000;
+}
+.china .bg-color {
+  background-image: linear-gradient(to right, #0e241d, #174a3a, #0e241d);
+}
+.china .bg-radial {
+  background-image: radial-gradient(#174a3a, #0e241d) !important;
+}
 .china .color, .china .color a { color: #df0000 !important; }
 .china .picture {
   border: 25px solid transparent;
   border-image: url("/pb-china7.png") 66 round;
+}
+
+.japan .bg-color {
+  background-image: linear-gradient(to right, #7dfd6a, #b1fda7, #7dfd6a);
+}
+.japan .bg-radial {
+  background-image: radial-gradient(#b1fda7, #7dfd6a) !important;
+}
+.japan h2 {
+  text-shadow: 2px 2px #333;
+}
+.japan .color, .japan .color a { color: #000 !important; }
+.japan .picture {
+  border: 25px solid transparent;
+  border-image: url("/border_01.png") 23 31 round;
+}
+
+.newzealand .bg-color {
+  background-image: linear-gradient(to right, #85c3fd, #cee9ff, #85c3fd);
+}
+.newzealand .color, .newzealand .color a { color: #4b3530 !important; }
+.newzealand .bg-radial {
+  background-image: radial-gradient(#cee9ff, #85c3fd) !important;
+}
+/*.newzealand .picture { border-image: url("/pb-white.png") 52 round; }*/
+.newzealand .frame {
+  border: 1px solid #828080;
+}
+.newzealand .picture {
+  border: 20px solid white;
+  box-shadow: 10px 10px;
 }
 
 .italy .bg-color { background-color: #916b62; }
@@ -134,20 +207,12 @@
   border-image: url("/border_05.jpg") 60 50 round;
 }
 
-.netherlands .bg-color { background-color: #0c2d6c; }
+.netherlands .bg-color {
+  /*background-color: #0c2d6c;*/
+  background-image: linear-gradient(to right, #0c2d6c, #1b58cc, #0c2d6c);
+}
 .netherlands .color, .netherlands .color a { color: #fff !important; }
 .netherlands .picture {
   border: 25px solid transparent;
   border-image: url("/border_04.png") 47 round;
-}
-
-.newzealand .bg-color { background-color: #b1daff; }
-.newzealand .color, .newzealand .color a { color: #4b3530 !important; }
-/*.newzealand .picture { border-image: url("/pb-white.png") 52 round; }*/
-.newzealand .frame {
-  border: 1px solid #828080;
-}
-.newzealand .picture {
-  border: 20px solid white;
-  box-shadow: 10px 10px;
 }
