@@ -22,11 +22,7 @@
             <div></div>
             <div class='desc' style='order: <%- i%2===0 ? 1 : 3 %>;'>
               <div class='handwriting'>
-                <% if (NODE_ENV == 'development') { %>
-                  <u contenteditable="true" onblur="updateDescription(this, '<%- trip.place %>', '<%- image %>')"><%- description %><%- ' &nbsp;'.repeat(Math.max(0, 76 - (description ? description.length/2 : 0))) %></u>
-                <% } else { %>
-                  <u><%- description || ' &nbsp;'.repeat(76) %></u>
-                <% } %>
+                <u contenteditable="<%- NODE_ENV == 'development' %>" onblur="updateDescription(this, '<%- trip.place %>', '<%- image %>')"><%- description %><%- ' &nbsp;'.repeat(Math.max(0, 76 - (description ? description.length/2 : 0))) %></u>
               </div>
             </div>
           </div>
@@ -39,14 +35,16 @@
 
 <script>
   function updateDescription(elem, place, image) {
-    let headers = {'Content-Type': 'application/json'}
-    let body = JSON.stringify({desc: elem.innerText.trimEnd(), place, image})
-    fetch('/update', {method: 'PATCH', body, headers}).then(response => {
-      if (response.ok) {
-        console.log('success')
-      } else {
-        alert('Error updating')
-      }
-    })
+    if (NODE_ENV == 'development') {
+      let headers = {'Content-Type': 'application/json'}
+      let body = JSON.stringify({desc: elem.innerText.trimEnd(), place, image})
+      fetch('/update', {method: 'PATCH', body, headers}).then(response => {
+        if (response.ok) {
+          console.log('success')
+        } else {
+          alert('Error updating')
+        }
+      })
+    }
   }
 </script>
