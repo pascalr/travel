@@ -2,6 +2,8 @@
 
 ## TODO
 
+- Ajouter la Turquie, la Bulgarie et Tahiti.
+- Corriger le français
 - Une petite séparation entre l'image header et le site?
 - Linear gradient views/trip and radial gradient views/index
 - Faire des belles lignes séparatrices entre les photos discrètes avec des tigilis

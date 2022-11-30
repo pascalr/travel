@@ -4,6 +4,21 @@
   /*src: url('/fonts/SquarePeg-Regular.ttf');*/
 }
 
+.navbar {
+  height: 3rem;
+  background-color: var(--light);
+  text-align: center;
+  line-height: 3rem;
+  font-size: 1.2em;
+  text-transform: uppercase;
+  font-weight: bold;
+  border-bottom: 2px solid var(--dark);
+}
+.navbar a {
+  color: var(--text) !important;
+  text-decoration: none;
+}
+
 .handwriting {
   font-family: handwriting;
   font-size: 2em;
@@ -92,45 +107,49 @@
   body { font-size: 0.8em; }
 }
 
-.thailand .bg-color {
-  /*background-color: #fbdfaa;*/
-  /*background-image: radial-gradient(#fbdfaa, #867555);*/
-  background-image: linear-gradient(to right, #9b8c6e, #fbdfaa, #9b8c6e);
+:root {
+  --light: #fbdfaa;
+  --dark: #9b8c6e;
+  --text: #603616;
 }
-.thailand .bg-radial {
-  background-image: radial-gradient(#fbdfaa, #887a5d) !important;
+
+.thailand {
+  --light: #fbdfaa;
+  --dark: #887a5d;
+  --text: #4f2b11;
 }
+.bg-color {
+  background-image: linear-gradient(to right, var(--dark), var(--light), var(--dark));
+}
+.bg-radial {
+  background-image: radial-gradient(var(--light), var(--dark)) !important;
+}
+.color, .color a { color: var(--text) !important; }
 .thailand h2 {
   text-shadow: 2px 2px #1e190d;
 }
-.thailand .color, .thailand .color a { color: #603616 !important; }
 .thailand .picture {
   border: 25px solid transparent;
   border-image: url("/border_07.jpg") 40 round;
 }
 
-.cambodia .bg-color {
-  /*background-color: #736b63;*/
-  background-image: linear-gradient(to right, #736b63, #a69a8e, #736b63);
+.cambodia {
+  --light: #a69a8e;
+  --dark: #736b63;
+  --text: #000;
 }
 .cambodia h2 {
   text-shadow: 2px 2px #423b35;
 }
-.cambodia .bg-radial {
-  background-image: radial-gradient(#a69a8e, #736b63) !important;
-}
-.cambodia .color, .cambodia .color a { color: #000 !important; }
 .cambodia .picture {
   border: 25px solid transparent;
   border-image: url("/border_02.jpg") 75 round;
 }
 
-.vietnam .color, .vietnam .color a { color: #111 !important; }
-.vietnam .bg-color {
-  background-image: linear-gradient(to right, #46bad5, #aaecfb, #46bad5);
-}
-.vietnam .bg-radial {
-  background-image: radial-gradient(#aaecfb, #46bad5) !important;
+.vietnam {
+  --light: #aaecfb;
+  --dark: #46bad5;
+  --text: #111;
 }
 .vietnam h2 {
   text-shadow: 2px 2px #333;
@@ -141,41 +160,38 @@
 }
 
 .china {
+  --light: #174a3a;
+  --dark: #0e241d;
+  --text: #df0000;
+}
+.china {
   text-shadow: 2px 2px #000;
 }
-.china .bg-color {
-  background-image: linear-gradient(to right, #0e241d, #174a3a, #0e241d);
-}
-.china .bg-radial {
-  background-image: radial-gradient(#174a3a, #0e241d) !important;
-}
-.china .color, .china .color a { color: #df0000 !important; }
 .china .picture {
   border: 25px solid transparent;
   border-image: url("/pb-china7.png") 66 round;
 }
 
-.japan .bg-color {
-  background-image: linear-gradient(to right, #7dfd6a, #b1fda7, #7dfd6a);
-}
-.japan .bg-radial {
-  background-image: radial-gradient(#b1fda7, #7dfd6a) !important;
+.japan {
+  --light: #fbe;
+  --dark: #ff5a5a;
+  --text: #000;
 }
 .japan h2 {
   text-shadow: 2px 2px #333;
 }
-.japan .color, .japan .color a { color: #000 !important; }
 .japan .picture {
   border: 25px solid transparent;
   border-image: url("/border_01.png") 23 31 round;
 }
 
-.newzealand .bg-color {
-  background-image: linear-gradient(to right, #85c3fd, #cee9ff, #85c3fd);
+.newzealand {
+  --light: #cee9ff;
+  --dark: #85c3fd;
+  --text: #4b3530;
 }
-.newzealand .color, .newzealand .color a { color: #4b3530 !important; }
-.newzealand .bg-radial {
-  background-image: radial-gradient(#cee9ff, #85c3fd) !important;
+.newzealand h2 {
+  text-shadow: 2px 2px #1e190d;
 }
 /*.newzealand .picture { border-image: url("/pb-white.png") 52 round; }*/
 .newzealand .frame {
@@ -186,33 +202,74 @@
   box-shadow: 10px 10px;
 }
 
-.italy .bg-color { background-color: #916b62; }
-.italy .color, .italy .color a { color: #000 !important; }
+.italy {
+  --light: #a88d87;
+  --dark: #755249;
+  --text: #000;
+}
+.italy h2 {
+  text-shadow: 2px 2px #1e190d;
+}
 .italy .picture {
   border: 25px solid transparent;
   border-image: url("/border_06.jpg") 74 74;
 }
 
-.france .bg-color { background-color: #9e9eac; }
-.france .color, .france .color a { color: #000 !important; }
+.france {
+  --light: #b4b4c1;
+  --dark: #757586;
+  --text: #000;
+}
+.france h2 {
+  text-shadow: 2px 2px #1e190d;
+}
 .france .picture {
   border: 25px solid transparent;
   border-image: url("/border_01.png") 23 31 round;
 }
 
-.belgium .bg-color { background-color: #385332; }
-.belgium .color, .belgium .color a { color: #fff !important; }
+.belgium {
+  --light: #4b6c44;
+  --dark: #293e24;
+  --text: #fff;
+}
+.belgium {
+  text-shadow: 2px 2px black;
+}
 .belgium .picture {
   border: 25px solid transparent;
-  border-image: url("/border_05.jpg") 60 50 round;
+  border-image: url("/border_01.png") 23 31 round;
 }
 
-.netherlands .bg-color {
-  /*background-color: #0c2d6c;*/
-  background-image: linear-gradient(to right, #0c2d6c, #1b58cc, #0c2d6c);
+.netherlands {
+  --light: #1b58cc;
+  --dark: #0c2d6c;
+  --text: #fff;
 }
-.netherlands .color, .netherlands .color a { color: #fff !important; }
+.netherlands {
+  text-shadow: 2px 2px black;
+}
 .netherlands .picture {
   border: 25px solid transparent;
-  border-image: url("/border_04.png") 47 round;
+  border-image: url("/border_01.png") 23 31 round;
+}
+
+.turkey {
+  --light: #fff;
+  --dark: #dce3ea;
+  --text: #1c1c1c;
+}
+.turkey .picture {
+  border: 25px solid transparent;
+  border-image: url("/border_01.png") 23 31 round;
+}
+
+.bulgaria {
+  --light: #111;
+  --dark: #000;
+  --text: #eee;
+}
+.bulgaria .picture {
+  border: 25px solid transparent;
+  border-image: url("/border_01.png") 23 31 round;
 }

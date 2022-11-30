@@ -75,39 +75,47 @@ let tripDetails = {
   },
   cambodia: {
     name: 'Cambodge',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "J'ai vu ce qu'avait l'air la pauvreté en allant au Cambodge. Ne pas avoir d'argent n'empêche pas les gens d'être heureux. Un viel homme que je ne connaissait pas m'a fait un super beau sourire avec ses quelques dents noirâtre qui lui restait.",
   },
   vietnam: {
     name: 'Viêt Nam',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "J'ai poursuivi mon aventure au Viêt Nam où j'ai fait de la plongée sous-marine et de l'escalade.",
   },
   china: {
     name: 'Chine',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "J'ai découvert ce que c'est d'être une star en Chine. Il n'y a vraiment pas beaucoup d'étrangers sauf dans les grandes villes. Un jeune homme blanc aux yeux bleus et cheveux châtains est tout un spécimen pour les Chinois qui adorent prendre des photos!",
   },
   japan: {
     name: 'Japon',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: 'Un coup de coeur! Des paysages magnifiques, des gens acceuillants, une culture très différente et une architecture incroyable!',
   },
   newzealand: {
     name: 'Nouvelle-Zélande',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "Retour aux sources dans la nature splendide de la Nouvelle-Zélande. Une grande diversité de paysage dont l'océan, les montagnes, la plage, les glaciers, les forêts, les prairies et les petits villages.",
   },
   italy: {
     name: 'Italy',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "Je ne suis pas resté longtemps parce que faire du pouce était pénible et le coût de la vie était élevé, mais j'ai vraiment adoré l'architecture!",
   },
   france: {
     name: 'France',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: 'Ça faisait plaisir de pouvoir parler ma langue natale. Des belles rencontres et de beaux paysages!',
   },
   belgium: {
     name: 'Belgique',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "J'ai appris que le pays a une partie flamande et une partie francophone. J'ai rencontré des gens acceuillants et ouverts d'esprits!",
   },
   netherlands: {
     name: 'Pays-Bas',
-    description: 'Lorem ipsum blah foo bar baz foo bar baz.',
+    description: "Un petit passage aux Pays-Bas avant de repartir pour le Québec. J'ai beaucoup aimé Amsterdam!",
+  },
+  turkey: {
+    name: 'Turquie',
+    description: "Plusieurs année plus tard, j'ai voyagé en Turquie pour la mariage à mon grand frère. Le mariage, la mer méditerranéenne et les paysages était très beau!",
+  },
+  bulgaria: {
+    name: 'Bulgarie',
+    description: "J'ai profité d'être en Turquie pour voyager un peu en Bulgarie. C'était une période difficile. J'étais en peine d'amour de ma première blonde. Mais j'ai fait de très belles rencontres!",
   },
 }
 
