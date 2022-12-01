@@ -24,6 +24,14 @@
   font-size: 2em;
 }
 
+.year {
+  text-align: center;
+  font-size: 3em;
+  padding: 1.5rem;
+  background-color: #262323;
+  color: white;
+}
+
 .separator {
   height: 4em;
   background-image: linear-gradient(to bottom, #262323, #262323, #3c3939);
@@ -108,9 +116,9 @@
 }
 
 :root {
-  --light: #fbdfaa;
-  --dark: #9b8c6e;
-  --text: #603616;
+  --light: #3c3939;
+  --dark: #262323;
+  --text: #fff;
 }
 
 .thailand {
@@ -118,6 +126,7 @@
   --dark: #887a5d;
   --text: #4f2b11;
 }
+
 .bg-color {
   background-image: linear-gradient(to right, var(--dark), var(--light), var(--dark));
 }
@@ -149,10 +158,10 @@
 .vietnam {
   --light: #aaecfb;
   --dark: #46bad5;
-  --text: #111;
+  --text: #9B4A36;
 }
-.vietnam h2 {
-  text-shadow: 2px 2px #333;
+.vietnam {
+  text-shadow: 1px 1px #370909;
 }
 .vietnam .picture {
   border: 25px solid transparent;
@@ -162,7 +171,7 @@
 .china {
   --light: #174a3a;
   --dark: #0e241d;
-  --text: #df0000;
+  --text: #ff4901;
 }
 .china {
   text-shadow: 2px 2px #000;
@@ -175,7 +184,7 @@
 .japan {
   --light: #fbe;
   --dark: #ff5a5a;
-  --text: #000;
+  --text: #2D2926;
 }
 .japan h2 {
   text-shadow: 2px 2px #333;
@@ -205,20 +214,25 @@
 .italy {
   --light: #a88d87;
   --dark: #755249;
-  --text: #000;
+  --text: #f4cbc0;
 }
-.italy h2 {
-  text-shadow: 2px 2px #1e190d;
+.italy {
+  text-shadow: 2px 2px #05031e;
 }
 .italy .picture {
   border: 25px solid transparent;
   border-image: url("/border_06.jpg") 74 74;
 }
 
-.france {
+/*.france {
   --light: #b4b4c1;
   --dark: #757586;
   --text: #000;
+}*/
+.france {
+  --light: #707070;
+  --dark: #505050;
+  --text: #d6ed17;
 }
 .france h2 {
   text-shadow: 2px 2px #1e190d;
@@ -231,7 +245,7 @@
 .belgium {
   --light: #4b6c44;
   --dark: #293e24;
-  --text: #fff;
+  --text: #ffe77a;
 }
 .belgium {
   text-shadow: 2px 2px black;

@@ -103,7 +103,7 @@ let tripDetails = {
   },
   belgium: {
     name: 'Belgique',
-    description: "J'ai appris que le pays a une partie flamande et une partie francophone. J'ai rencontré des gens acceuillants et ouverts d'esprits!",
+    description: "J'ai appris que le pays a une partie flamande et une partie francophone. J'ai rencontré des gens acceuillants et très ouverts!",
   },
   netherlands: {
     name: 'Pays-Bas',
@@ -117,6 +117,12 @@ let tripDetails = {
     name: 'Bulgarie',
     description: "J'ai profité d'être en Turquie pour voyager un peu en Bulgarie. C'était une période difficile. J'étais en peine d'amour de ma première blonde. Mais j'ai fait de très belles rencontres!",
   },
+}
+
+let tripsByYear = {
+  2012: ['usa'],
+  2013: ['thailand', 'cambodia', 'vietnam', 'china', 'japan', 'newzealand', 'italy', 'france', 'belgium', 'netherlands'],
+  2014: ['turkey', 'bulgaria'],
 }
 
 let trips = {}
@@ -149,6 +155,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res, next) {
   res.locals.trips = Object.values(trips)
+  res.locals.tripsByYear = tripsByYear
   res.render('index')
 })
 

@@ -2,6 +2,8 @@
 
 ## TODO
 
+- Faire un Header pour les années? 2012: Californie. 2013: Grand voyage.  2014: Turquie et Bulgarie. 2022: Tahiti
+- Rajouter les États-Unis si j'arrive à trouver des photos sur internet qui représente bien ce que j'ai vu.
 - Ajouter la Turquie, la Bulgarie et Tahiti.
 - Corriger le français
 - Une petite séparation entre l'image header et le site?
@@ -28,6 +30,12 @@
 - Pete Linforth. border_02.jpg. https://pixabay.com/illustrations/picture-frame-antique-vintage-2254525/
 - Gerd Altmann. border_03.jpg. https://pixabay.com/illustrations/frame-picture-frame-outline-shine-89486/
 - MR1313. border_07.jpg. https://pixabay.com/illustrations/frame-photo-frame-sample-photoshop-2486643/
+
+##### US
+
+- Bailey Alexander. New mexico. https://unsplash.com/photos/RBjp7W3AWoo
+- Joonyeop Baek. New mexico. https://unsplash.com/photos/4x6dxnVMRWE
+- Julia Karnavusha. New mexico. https://unsplash.com/photos/gneucKsLjAQ
 
 ## Reduce image size
 mogrify -resize 25% -quality 85 *.jpg

@@ -5,30 +5,34 @@
   </head>
   <body id='index'>
     <%- include('partials/navbar') %>
-    <% trips.forEach((trip, i) => { %>
-      <div class='<%- trip.place %>'>
-        <div class='bg-color bg-radial color'>
-          <div class='wide-trunk'>
-            <div class='section'>
-              <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 1; max-width: 804px; margin: auto;'>
-                <a href='/t/<%- trip.place %>'>
-                  <div class='frame'>
-                    <img src='/<%- trip.image %>' class='picture'></img>
-                  </div>
-                </a>
-              </div>
-              <div></div>
-              <div class='desc handwriting' style='order: <%- i%2===0 ? 1 : 3 %>; flex-shrink: 1; max-width: 15em;'>
-                <h2><%- trip.name %></h2>
-                <p style='line-height: 1.5em;'><%- trip.description %></p>
-                <p><a href='/t/<%- trip.place %>'>En savoir plus...</a></p>
+    <%# let keys = Object.keys(tripsByYear) %>
+    <%# keys.forEach((year) => { %>
+      <div class='year'><%# year %></div>
+      <% trips.forEach((trip, i) => { %>
+        <div class='<%- trip.place %>'>
+          <div class='bg-color bg-radial color'>
+            <div class='wide-trunk'>
+              <div class='section'>
+                <div style='order: <%- i%2!==0 ? 1 : 3 %>; flex-shrink: 1; max-width: 804px; margin: auto;'>
+                  <a href='/t/<%- trip.place %>'>
+                    <div class='frame'>
+                      <img src='/<%- trip.image %>' class='picture'></img>
+                    </div>
+                  </a>
+                </div>
+                <div></div>
+                <div class='desc handwriting' style='order: <%- i%2===0 ? 1 : 3 %>; flex-shrink: 1; max-width: 15em;'>
+                  <h2><%- trip.name %></h2>
+                  <p style='line-height: 1.5em;'><%- trip.description %></p>
+                  <p><a href='/t/<%- trip.place %>'>En savoir plus...</a></p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
-      <% if (i != trips.length-1) { %><div class='separator'></div><% } %>
-    <% }) %>
+        <% if (i != trips.length-1) { %><div class='separator'></div><% } %>
+      <% }) %>
+    <%# }) %>
     <%- include('partials/footer') %>
   </body>
 </html>
