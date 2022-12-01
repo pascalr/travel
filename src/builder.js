@@ -11,15 +11,18 @@ import {promisify} from 'node:util'
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
-/**
- * Build a website given an output directory and a list of pages.
- */
-export async function buildWebsite(outDir, pages) {
+export function clearDocs() {
 
   if (fs.existsSync(outDir)) {
     console.log('Removing previous docs...')
     fs.rmSync(outDir, {recursive: true})
   }
+}
+
+/**
+ * Build a website given an output directory and a list of pages.
+ */
+export async function buildWebsite(outDir, pages) {
 
   let fetched = []
   let dependencies = []
@@ -59,12 +62,12 @@ export async function buildWebsite(outDir, pages) {
     }
   }
   
-  let missings = [...removeAll(new Set(dependencies), fetched)]
-  console.log('missings', missings)
-  
-  missings.forEach(missing => {
-    download(missing, './docs'+missing)
-  })
+  //let missings = [...removeAll(new Set(dependencies), fetched)]
+  //console.log('missings', missings)
+  //
+  //missings.forEach(missing => {
+  //  download(missing, './docs'+missing)
+  //})
 
 }
 

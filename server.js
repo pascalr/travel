@@ -66,7 +66,7 @@ let descritions = {
 // Polynésie française: Bleu ou vert
 // Étais Unis: bleu margin et blanc. Ou blanc et Noir
 
-const imageDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'public/descriptions.json'), 'utf8'))
+const imageDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'docs/descriptions.json'), 'utf8'))
 
 let tripDetails = {
   usa: {
@@ -136,7 +136,7 @@ Object.keys(tripDetails).forEach(place => {
     descriptions: [], // Default is empty, overwritten by tripDetails
     ...tripDetails[place],
     image: place+'.jpg',
-    images: fs.readdirSync(path.join(__dirname, 'public', place)),
+    images: fs.readdirSync(path.join(__dirname, 'docs', place)),
     descriptions: imageDescriptions[place],
   }
 })
@@ -155,7 +155,7 @@ app.locals.NODE_ENV = process.env.NODE_ENV
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'docs')));
 
 app.get('/', function(req, res, next) {
   res.render('index', {trips, tripsByYear})
@@ -168,7 +168,7 @@ app.patch('/update', function(req, res, next) {
     a[image] = desc
     imageDescriptions[place] = a
     let d = JSON.stringify(imageDescriptions, undefined, '\t')
-    fs.writeFileSync(path.join(__dirname, 'public/descriptions.json'), d)
+    fs.writeFileSync(path.join(__dirname, 'docs/descriptions.json'), d)
   }
   res.send('ok')
 })
