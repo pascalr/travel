@@ -2,6 +2,8 @@
 
 ## TODO
 
+- Une carte de mon trajets aux états-unis.
+- Voyage au Canada aussi?
 - Faire un Header pour les années? 2012: Californie. 2013: Grand voyage.  2014: Turquie et Bulgarie. 2022: Tahiti
 - Rajouter les États-Unis si j'arrive à trouver des photos sur internet qui représente bien ce que j'ai vu.
 - Ajouter la Turquie, la Bulgarie et Tahiti.
@@ -30,6 +32,15 @@
 - Pete Linforth. border_02.jpg. https://pixabay.com/illustrations/picture-frame-antique-vintage-2254525/
 - Gerd Altmann. border_03.jpg. https://pixabay.com/illustrations/frame-picture-frame-outline-shine-89486/
 - MR1313. border_07.jpg. https://pixabay.com/illustrations/frame-photo-frame-sample-photoshop-2486643/
+- Tim Peterson. Kentucky ranch. https://unsplash.com/photos/Az8P8lOcgPA
+- Kevin Wiegand. Vermont snow. https://unsplash.com/photos/EvD-rF_ATw8
+- tommao wang. Route 66. https://unsplash.com/photos/KhvzUKbF8Fw
+- Tanya Dusett. West virginia mountains. https://unsplash.com/photos/KwJewnpUT6I
+- Carter Brink. Santa Cruz Rolloer Coasters. https://unsplash.com/photos/H_JFlYdHD5w
+- Sean Kelley. Santa Cruz Sea. https://unsplash.com/photos/qR5wQNyDA1s
+- Michaela. San Fransisco brdige. https://unsplash.com/photos/fUYnzXrVmhE
+- Clément Falize. San Fransisco. https://unsplash.com/photos/NBZT1EHzHd8
+- Nick Sarvari. Alcatraz. https://unsplash.com/photos/KN9J6fHE5Pg
 
 ##### US
 

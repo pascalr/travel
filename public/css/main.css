@@ -287,3 +287,13 @@
   border: 25px solid transparent;
   border-image: url("/border_01.png") 23 31 round;
 }
+
+.usa {
+  --light: #111;
+  --dark: #000;
+  --text: #eee;
+}
+.usa .picture {
+  border: 25px solid transparent;
+  border-image: url("/border_01.png") 23 31 round;
+}

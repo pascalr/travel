@@ -5,10 +5,10 @@
   </head>
   <body id='index'>
     <%- include('partials/navbar') %>
-    <%# let keys = Object.keys(tripsByYear) %>
-    <%# keys.forEach((year) => { %>
-      <div class='year'><%# year %></div>
-      <% trips.forEach((trip, i) => { %>
+    <% Object.keys(tripsByYear).sort().reverse().forEach((year) => { %>
+      <div class='year'><%- year %></div>
+      <% tripsByYear[year].forEach((place, i) => { %>
+        <% trip = trips[place] %>
         <div class='<%- trip.place %>'>
           <div class='bg-color bg-radial color'>
             <div class='wide-trunk'>
@@ -32,7 +32,7 @@
         </div>
         <% if (i != trips.length-1) { %><div class='separator'></div><% } %>
       <% }) %>
-    <%# }) %>
+    <% }) %>
     <%- include('partials/footer') %>
   </body>
 </html>

@@ -69,6 +69,10 @@ let descritions = {
 const imageDescriptions = JSON.parse(fs.readFileSync(path.join(__dirname, 'public/descriptions.json'), 'utf8'))
 
 let tripDetails = {
+  usa: {
+    name: 'États-Unis',
+    description: "Mon tout premier voyage a été la traversé des États-Unis seul dans mon auto. Malheureusement, je ne prenais pas de photo à l'époque. Les photos sont prises sur internet pour illustrer mon voyage.",
+  },
   thailand: {
     name: 'Thaïlande',
     description: "Mes voyages à l'extérieur du continent ont commencé en Thaïlande. Je suis parti avec un billet d'aller et mon sac à dos seulement.",
@@ -111,7 +115,7 @@ let tripDetails = {
   },
   turkey: {
     name: 'Turquie',
-    description: "Plusieurs année plus tard, j'ai voyagé en Turquie pour la mariage à mon grand frère. Le mariage, la mer méditerranéenne et les paysages était très beau!",
+    description: "J'ai voyagé en Turquie pour la mariage à mon grand frère. Le mariage, la mer méditerranéenne et les paysages était très beau!",
   },
   bulgaria: {
     name: 'Bulgarie',
@@ -154,9 +158,7 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.get('/', function(req, res, next) {
-  res.locals.trips = Object.values(trips)
-  res.locals.tripsByYear = tripsByYear
-  res.render('index')
+  res.render('index', {trips, tripsByYear})
 })
 
 app.patch('/update', function(req, res, next) {
