@@ -10,15 +10,7 @@ let rootDir = path.join(__dirname, 'docs')
 
 let pages = [
   {url: '/', out: './docs/index.html'},
-  {file: '/fonts/LaBelleAurore-Regular.ttf'},
-  {file: '/border_01.png'},
-  {file: '/border_02.jpg'},
-  {file: '/border_03.jpg'},
-  {file: '/border_06.jpg'},
-  {file: '/border_07.jpg'},
-  {file: '/pb-china7.png'},
 ]
-  //{url: '/css/main.css', out: './docs/css/main.css'},
 
 let places = ['thailand', 'cambodia', 'vietnam', 'china', 'japan', 'newzealand', 'italy', 'france', 'belgium', 'netherlands', 'turkey', 'bulgaria']
 places.forEach(place => {

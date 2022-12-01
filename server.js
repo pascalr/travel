@@ -155,7 +155,6 @@ app.locals.NODE_ENV = process.env.NODE_ENV
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
-app.use(express.static(path.join(__dirname, 'docs')));
 
 app.get('/', function(req, res, next) {
   res.render('index', {trips, tripsByYear})
@@ -177,6 +176,8 @@ app.get('/t/:name', function(req, res, next) {
   res.locals.trip = trips[req.params.name]
   res.render('trip')
 })
+
+app.use(express.static(path.join(__dirname, 'docs')));
 
 // catch 404 and forward to error handler
 app.use(function(req, res, next) {
