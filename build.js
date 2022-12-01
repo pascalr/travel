@@ -12,7 +12,7 @@ let pages = [
   {url: '/', out: './docs/index.html'},
 ]
 
-let places = ['thailand', 'cambodia', 'vietnam', 'china', 'japan', 'newzealand', 'italy', 'france', 'belgium', 'netherlands', 'turkey', 'bulgaria']
+let places = ['thailand', 'cambodia', 'vietnam', 'china', 'japan', 'newzealand', 'italy', 'france', 'belgium', 'netherlands', 'turkey', 'bulgaria', 'usa']
 places.forEach(place => {
   pages.push({url: '/t/'+place, out: './docs/t/'+place+'/index.html'})
 })
