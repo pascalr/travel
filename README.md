@@ -2,6 +2,9 @@
 
 ## TODO
 
+- Un système pour éviter de dupliquer les photos dans public et dans docs...
+- Voyage à New York
+- Une catégorie autre et mettre d'autre photos personelles.
 - Une carte de mon trajets aux états-unis.
 - Voyage au Canada aussi?
 - Faire un Header pour les années? 2012: Californie. 2013: Grand voyage.  2014: Turquie et Bulgarie. 2022: Tahiti
