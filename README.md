@@ -4,7 +4,7 @@
 
 - Voyage à New York
 - Une catégorie autre et mettre d'autre photos personelles, comme Parc Yamaska
-- Voyage au Canada aussi?
+- Voyage au Canada 2012
 - Ajouter Tahiti, 2022
 - Corriger le français
 - Une petite séparation entre l'image header et le site?
