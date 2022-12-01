@@ -1,6 +1,6 @@
 @font-face {
   font-family: handwriting;
-  src: url('/fonts/LaBelleAurore-Regular.ttf');
+  src: url('../fonts/LaBelleAurore-Regular.ttf');
   /*src: url('/fonts/SquarePeg-Regular.ttf');*/
 }
 
@@ -139,7 +139,7 @@
 }
 .thailand .picture {
   border: 25px solid transparent;
-  border-image: url("/border_07.jpg") 40 round;
+  border-image: url("../border_07.jpg") 40 round;
 }
 
 .cambodia {
@@ -152,7 +152,7 @@
 }
 .cambodia .picture {
   border: 25px solid transparent;
-  border-image: url("/border_02.jpg") 75 round;
+  border-image: url("../border_02.jpg") 75 round;
 }
 
 .vietnam {
@@ -165,7 +165,7 @@
 }
 .vietnam .picture {
   border: 25px solid transparent;
-  border-image: url("/border_03.jpg") 33 round;
+  border-image: url("../border_03.jpg") 33 round;
 }
 
 .china {
@@ -178,7 +178,7 @@
 }
 .china .picture {
   border: 25px solid transparent;
-  border-image: url("/pb-china7.png") 66 round;
+  border-image: url("../pb-china7.png") 66 round;
 }
 
 .japan {
@@ -191,7 +191,7 @@
 }
 .japan .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .newzealand {
@@ -221,7 +221,7 @@
 }
 .italy .picture {
   border: 25px solid transparent;
-  border-image: url("/border_06.jpg") 74 74;
+  border-image: url("../border_06.jpg") 74 74;
 }
 
 /*.france {
@@ -239,7 +239,7 @@
 }
 .france .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .belgium {
@@ -252,7 +252,7 @@
 }
 .belgium .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .netherlands {
@@ -265,7 +265,7 @@
 }
 .netherlands .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .turkey {
@@ -275,7 +275,7 @@
 }
 .turkey .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .bulgaria {
@@ -285,7 +285,7 @@
 }
 .bulgaria .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }
 
 .usa {
@@ -295,5 +295,5 @@
 }
 .usa .picture {
   border: 25px solid transparent;
-  border-image: url("/border_01.png") 23 31 round;
+  border-image: url("../border_01.png") 23 31 round;
 }

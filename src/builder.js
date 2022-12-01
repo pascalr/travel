@@ -26,28 +26,37 @@ export async function buildWebsite(outDir, pages) {
 
   for (let i = 0; i < pages.length; i++) {
     let page = pages[i]
-  
-    let text = await fetchText(page.url)
-    fetched.push(page.url)
-    let root = parse(text)
-  
-    let links = root.querySelectorAll('a') || []
-    links.forEach(convertLink(page.url, 'href', dependencies))
+
+    if (page.file) {
+      console.log('file', page.file)
     
-    let images = root.querySelectorAll('img') || []
-    images.forEach(convertLink(page.url, 'src', dependencies))
+      download(page.file, './docs'+page.file)
+
+    } else {
+      console.log('url', page.url)
   
-    let css = root.querySelectorAll('link') || []
-    css.forEach(convertLink(page.url, 'href', dependencies))
+      let text = await fetchText(page.url)
+      fetched.push(page.url)
+      let root = parse(text)
   
-    let videos = root.querySelectorAll('video') || []
-    videos.forEach(convertLink(page.url, 'src', dependencies))
+      let links = root.querySelectorAll('a') || []
+      links.forEach(convertLink(page.url, 'href', dependencies))
+      
+      let images = root.querySelectorAll('img') || []
+      images.forEach(convertLink(page.url, 'src', dependencies))
   
-    let scripts = root.querySelectorAll('script[src]') || []
-    scripts.forEach(convertLink(page.url, 'src', dependencies))
+      let css = root.querySelectorAll('link') || []
+      css.forEach(convertLink(page.url, 'href', dependencies))
+  
+      let videos = root.querySelectorAll('video') || []
+      videos.forEach(convertLink(page.url, 'src', dependencies))
+  
+      let scripts = root.querySelectorAll('script[src]') || []
+      scripts.forEach(convertLink(page.url, 'src', dependencies))
  
-    //let out = path.join(__dirname, outDir, page.url, 'index.html')
-    await save(root.toString(), page.out)
+      //let out = path.join(__dirname, outDir, page.url, 'index.html')
+      await save(root.toString(), page.out)
+    }
   }
   
   let missings = [...removeAll(new Set(dependencies), fetched)]
