@@ -115,7 +115,7 @@ let tripDetails = {
   },
   turkey: {
     name: 'Turquie',
-    description: "J'ai voyagé en Turquie pour la mariage à mon grand frère. Le mariage, la mer méditerranéenne et les paysages était très beau!",
+    description: "J'ai voyagé en Turquie pour le mariage à mon grand frère. Le mariage, la mer méditerranéenne et les paysages était très beau!",
   },
   bulgaria: {
     name: 'Bulgarie',
