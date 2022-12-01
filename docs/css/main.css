@@ -29,7 +29,9 @@
   font-size: 3em;
   padding: 1.5rem;
   background-color: #262323;
-  color: white;
+  background-image: linear-gradient(to bottom, #151515, #353434, #151515, #000);
+  color: #cccc7d;
+  text-shadow: 2px 2px #13130e;
 }
 
 .separator {

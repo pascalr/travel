@@ -6,7 +6,7 @@
   <body id='index'>
     <%- include('partials/navbar') %>
     <% Object.keys(tripsByYear).sort().reverse().forEach((year) => { %>
-      <div class='year'><%- year %></div>
+      <div class='year'>*** <%- year %> ***</div>
       <% tripsByYear[year].forEach((place, i) => { %>
         <% trip = trips[place] %>
         <div class='<%- trip.place %>'>
