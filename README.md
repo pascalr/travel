@@ -2,8 +2,6 @@
 
 ## TODO
 
-- Image hauteur maximum 100vh? Téléphone sur le côté image vertical gérer ça comment?
-- Enlever la photo que je suis bourré
 - Voyage à New York
 - Une catégorie autre et mettre d'autre photos personelles, comme Parc Yamaska
 - Voyage au Canada 2012
