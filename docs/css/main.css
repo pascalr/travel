@@ -1,3 +1,12 @@
+.unselectable {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
 @font-face {
   font-family: handwriting;
   src: url('../fonts/LaBelleAurore-Regular.ttf');
@@ -50,7 +59,7 @@
 
 .picture {
   display: block;
-  border: 15px solid transparent;
+  border: var(--frame-width) solid transparent;
   width: 100%;
 }
 
@@ -58,18 +67,18 @@
   min-width: 230px;
   max-width: 1100px;
   margin: 0 auto;
-  padding: 0 0.5em;
+  padding: 0 1em;
 }
 
 .wide-trunk {
   width: calc(35em + 804px);
   max-width: 100%;
   margin: auto;
-  padding: 0 0.5em;
+  padding: 0 1em;
 }
 
 .section {
-  padding: 3em 1em;
+  padding: 3em 0;
   display: block;
   align-items: center;
 }
@@ -122,6 +131,12 @@
   .d-lg-none {display: none;}
   .max-w-lg-15em {max-width: 15em;}
 }
+@media screen and (max-width: 576px) {
+  .picture {
+    margin-left: calc(-1 * var(--frame-width));
+    width: calc(100% + 2 * var(--frame-width))
+  }
+}
 @media screen and (max-width: 420px) {
   body { font-size: 0.9em; }
 }
@@ -133,6 +148,7 @@
   --light: #3c3939;
   --dark: #262323;
   --text: #fff;
+  --frame-width: 25px;
 }
 
 .thailand {
@@ -152,7 +168,6 @@
   text-shadow: 2px 2px #1e190d;
 }
 .thailand .picture {
-  border: 25px solid transparent;
   border-image: url("../border_07.jpg") 40 round;
 }
 
@@ -165,7 +180,6 @@
   text-shadow: 2px 2px #423b35;
 }
 .cambodia .picture {
-  border: 25px solid transparent;
   border-image: url("../border_02.jpg") 75 round;
 }
 
@@ -178,7 +192,6 @@
   text-shadow: 1px 1px #370909;
 }
 .vietnam .picture {
-  border: 25px solid transparent;
   border-image: url("../border_03.jpg") 33 round;
 }
 
@@ -191,7 +204,6 @@
   text-shadow: 2px 2px #000;
 }
 .china .picture {
-  border: 25px solid transparent;
   border-image: url("../pb-china7.png") 66 round;
 }
 
@@ -204,7 +216,6 @@
   text-shadow: 2px 2px #333;
 }
 .japan .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -212,6 +223,7 @@
   --light: #cee9ff;
   --dark: #85c3fd;
   --text: #4b3530;
+  --frame-width: 21px;
 }
 .newzealand h2 {
   text-shadow: 2px 2px #1e190d;
@@ -234,7 +246,6 @@
   text-shadow: 2px 2px #05031e;
 }
 .italy .picture {
-  border: 25px solid transparent;
   border-image: url("../border_06.jpg") 74 74;
 }
 
@@ -252,7 +263,6 @@
   text-shadow: 2px 2px #1e190d;
 }
 .france .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -265,7 +275,6 @@
   text-shadow: 2px 2px black;
 }
 .belgium .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -278,7 +287,6 @@
   text-shadow: 2px 2px black;
 }
 .netherlands .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -288,7 +296,6 @@
   --text: #1c1c1c;
 }
 .turkey .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -298,7 +305,6 @@
   --text: #eee;
 }
 .bulgaria .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
 
@@ -308,6 +314,5 @@
   --text: #eee;
 }
 .usa .picture {
-  border: 25px solid transparent;
   border-image: url("../border_01.png") 23 31 round;
 }
